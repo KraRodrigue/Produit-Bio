@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUIT BIO</title>
+    <link rel="stylesheet" href="prod1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="boite1">
+        <div class="nav-beug">
+            <span id="nav-beug" >☰</span>
+        </div>
+        <header>
+            <h1>🌿 Produits Bio 🥜</h1>
+            
+        </header>
+        <nav class="nvgt1">
+            <ul class="nvgt">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#Produit">Nos Produits</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-btn" onclick="ouvrirPanier()">
+            <button id="openCart">🛒 <span id="cart-count">0</span></button>
+        </div>
+    </div> 
+    
+    <section class="accueil" id="accueil">
+        <div class="contenu">
+            <h1>Bienvenue chez Produits Bio</h1>
+            <p>
+                Découvrez notre large sélection de produits sains, frais et 100% naturels, soigneusement choisis pour préserver votre santé et enrichir votre bien-être au quotidien. 
+                Chez <strong>Produits Bio</strong>, nous privilégions la qualité, la fraîcheur et l'authenticité afin de vous offrir le meilleur de la nature, pour un mode de vie sain et équilibré.
+            </p>
+
+            <a href="https://wa.me/+2250576732167" class="btn">Commander sur whatsapp</a>
+        </div>
+        <div id="Produit"></div>
+    </section>
+    
+    <div class="containe" >
+        <div class="produit" >
+            Nos produits
+        </div>
+        <div class="image">
+
+            <div class="photo" data-produit-id="1">
+                <div class="img1">
+                    <img src="./image/caramel3.jpg" alt="" data-produit-image>
+                </div>
+                <div class="coeur">
+                    <i class="fa-regular fa-heart heart" onclick="toggleHeart(this)"></i>
+                </div>
+                <div class="test" data-produit-name>  Caramelle <br> sucré</div>
+                <div class="prix" data-produit-prix>2000 Fcfa</div>
+                <div class="bouton">
+                    <button class="whatsapp-btn" >
+                        <i class="fa-solid fa-cart-plus"></i>Ajouter au panier
+                    </button>
+                </div>
+            </div>
+
+            <div class="photo" data-produit-id="2">
+                <div class="img1">
+                    <img src="./image/caramel5.jpg" alt="" data-produit-image>
+                </div>
+                <div class="coeur">
+                    <i class="fa-regular fa-heart heart" onclick="toggleHeart(this)"></i>
+                </div>
+                <div class="test" data-produit-name> Caramelle <br> sucré</div>
+                <div class="prix" data-produit-prix>1000 Fcfa</div>
+                <div class="bouton">
+                    <button class="whatsapp-btn" >
+                       <i class="fa-solid fa-cart-plus"></i> Ajouter au panier
+                    </button>
+                </div>
+            </div>
+            <div class="photo" data-produit-id="3">
+                <div class="img1">
+                    <img src="./image/pate d'arrachide3.jpg" alt="" data-produit-image>
+                </div>
+                <div class="coeur">
+                    <i class="fa-regular fa-heart heart" onclick="toggleHeart(this)"></i>
+                </div>
+                <div class="test" data-produit-name>  Patte <br>D'arachide</div>
+                <div class="prix" data-produit-prix>1000 Fcfa</div>
+                <div class="bouton">
+                    <button class="whatsapp-btn" >
+                        <i class="fa-solid fa-cart-plus"></i>Ajouter au panier
+                    </button>
+                </div>
+            </div>
+            <div class="photo" data-produit-id="4">
+                <div class="img1">
+                    <img src="./image/pate d'arrachide2.jpg" alt="" data-produit-image>
+                </div>
+                <div class="coeur">
+                    <i class="fa-regular fa-heart heart" onclick="toggleHeart(this)"></i>
+                </div>
+                <div class="test" data-produit-name> Patte <br> d'arrachide</div>
+                <div class="prix" data-produit-prix>3000 Fcfa</div>
+                <div class="bouton">
+                    <button class="whatsapp-btn" >
+                        <i class="fa-solid fa-cart-plus"></i> Ajouter au panier
+                    </button>
+                </div>
+            </div>
+             <div class="photo" data-produit-id="5" >
+                <div class="img1">
+                    <img src="./image/pate d'arrachide4.jpg" alt="" data-produit-image>
+                </div>
+                <div class="coeur">
+                    <i class="fa-regular fa-heart heart" onclick="toggleHeart(this)"></i>
+                </div>
+                <div class="test" data-produit-name> Bonne Patte <br> d'arrachide </div>
+                <div class="prix" data-produit-prix>1500 Fcfa</div>
+                <div class="bouton">
+                    <button class="whatsapp-btn" >
+                        <i class="fa-solid fa-cart-plus"></i> Ajouter au panier
+                    </button>
+                </div>
+            </div>
+             <div class="photo" data-produit-id="7">
+                <div class="img1">
+                    <img src="./image/caramels3.jpg" alt="" data-produit-image>
+                </div>
+                <div class="coeur">
+                    <i class="fa-regular fa-heart heart" onclick="toggleHeart(this)"></i>
+                </div>
+                <div class="test" data-produit-name> Caramelle <br> moins sucré </div>
+                <div class="prix" data-produit-prix>2000 Fcfa</div>
+                <div class="bouton">
+                    <button class="whatsapp-btn">
+                        <i class="fa-solid fa-cart-plus"></i> Ajouter au panier
+                    </button>
+                </div>
+            </div>
+             <div class="photo" data-produit-id="8">
+                <div class="img1">
+                    <img src="./image/Caramel-darachide.jpg" alt="" data-produit-image>
+                </div>
+                <div class="coeur">
+                    <i class="fa-regular fa-heart heart" onclick="toggleHeart(this)"></i>
+                </div>
+                <div class="test" data-produit-name> Caramelle <br> moins sucré </div>
+                <div class="prix" data-produit-prix>1000 Fcfa</div>
+                <div class="bouton">
+                    <button class="whatsapp-btn">
+                        <i class="fa-solid fa-cart-plus"> </i> Ajouter au panier
+                    </button>
+                </div>
+            </div>
+             <div class="photo" data-produit-id="9">
+                <div class="img1">
+                    <img src="./image/caramelN.jpg" alt="" data-produit-image>
+                </div>
+                <div class="coeur">
+                    <i class="fa-regular fa-heart heart" onclick="toggleHeart(this)"></i>
+                </div>
+                <div class="test" data-produit-name> Caramelle <br> moins sucré </div>
+                <div class="prix" data-produit-prix>500 Fcfa</div>
+                <div class="bouton">
+                    <button class="whatsapp-btn" >
+                        <i class="fa-solid fa-cart-plus"></i> Ajouter au panier
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   <section id="apropos" class="section-gray">
+        <div class="container">
+            <h2 class="section-title">À Propos de Nous</h2>
+            <div class="about-content">
+                <div>
+                    <p class="about-text">
+                        Depuis plus de 20 ans, ArachideLux se consacre à la création de pâtes d'arachide d'exception. 
+                        Nous sélectionnons soigneusement nos ingrédients et utilisons des méthodes artisanales 
+                        pour vous offrir des produits de qualité supérieure.
+                    </p>
+                    <p class="about-text">
+                        Notre passion pour l'excellence nous pousse à innover constamment tout en respectant 
+                        les traditions culinaires qui font la richesse de nos recettes.
+                    </p>
+                </div>
+                <div class="about-features">
+                    <div class="feature">
+                        <div class="feature-icon">🌱</div>
+                        <h4>100% Naturel</h4>
+                        <p>Ingrédients naturels sans conservateurs</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">👨‍🍳</div>
+                        <h4>Artisanal</h4>
+                        <p>Fabrication traditionnelle et soignée</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">⚡</div>
+                        <h4>Livraison Rapide</h4>
+                        <p>Expédition sous 24h partout en Cote d'ivoire</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">💯</div>
+                        <h4>Qualité Premium</h4>
+                        <p>Garantie satisfaction ou remboursé</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <div class="container2">
+        <div class="container2-image">
+            <img id="graine" src="./image/arachide-plante.png" alt="">
+        </div>
+        <div class="container2-texte">
+            <p>
+                Découvrez notre pâte d’arachide 100% locale, fabriquée avec soin à partir des meilleures arachides cultivées par les agriculteurs de notre région.
+                 Nous leur faisons pleinement confiance pour leur savoir-faire et la qualité exceptionnelle de leurs récoltes. Chaque pot reflète l’authenticité, la fraîcheur et le goût unique d’un produit naturel, fait avec passion. Soutenez le local, savourez l’excellence !
+            </p>
+        </div>
+    </div>
+
+    <div class="nad" id="contactct">
+  <div class="local">
+    <section id="localisation" class="localisation-section">
+        <h2>Notre localisation</h2>
+        <p>Venez nous rendre visite au 16ᵉ Arrondissement, boulevard principal, Abidjan, Côte d’Ivoire</p>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63561.85165415298!2d-4.125318495372189!3d5.322481744454115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s16th%2Barrondissement%2Bcommissariat%2Bdu%2B16%C3%A8me%2Barrondissement%20%2Bboulevard%2Bprincipal%20%2Babidjan%20%2B255%20%2Babidjan%20%2Bci!5e0!3m2!1sfr!2sci!4v1756513795795!5m2!1sfr!2sci" 
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+  </div>
+
+  <div class="contact" id="contact">
+    <form class="formu">
+      <h1>Contact</h1>
+      <div class="form-group1">
+        <label for="nom">Nom :</label>
+        <input id="nom" type="text" placeholder="Entrez votre nom">
+      </div>
+      <div class="form-group1">
+        <label for="prenom">Prénom :</label>
+        <input id="prenom" type="text" placeholder="Entrez votre prénom">
+      </div>
+      <div class="form-group1">
+        <label>Numéro :</label>
+        <input type="tel" placeholder="Entrez votre numéro">
+      </div>
+      <div class="form-group1">
+        <label>Email :</label>
+        <input type="email" placeholder="Entrez votre email">
+      </div>
+      <div class="form-group1">
+        <label>Votre message :</label>
+        <textarea placeholder="Entrez votre message"></textarea>
+        <input type="submit" value="Envoyer" class="anne" ">
+      </div>
+    </form>
+  </div>
+</div>
+
+
+ <!-- Modal du panier -->
+<div id="panier-modal" class="panier-modal">
+    <div class="panier-content">
+        <span class="close-modal" onclick="fermerPanier()">&times;</span>
+        <h2>Mon Panier</h2>
+        <div id="panier-items"></div>
+        <div class="panier-total" id="panier-total">Total: 0 FCFA</div>
+            <button class="commander-btn" onclick="commanderViaWhatsApp()">
+            <i class="ri-whatsapp-line"></i>
+                Commander via WhatsApp
+            </button>
+        </div>
+    </div>    
+</div>
+
+
+<footer class="footer-modern">
+    <div class="footer-modern-container">
+        <!-- Section newsletter -->
+        <div class="footer-newsletter">
+            <h2>Restez informé</h2>
+            <p>Inscrivez-vous à notre newsletter pour recevoir les dernières nouveautés et promotions.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Votre email" required>
+                <button type="submit">S'inscrire</button>
+            </form>
+        </div>
+
+        <!-- Section liens rapides -->
+        <div class="footer-links">
+            <h2>Liens rapides</h2>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#Produit">Nos Produits</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Section réseaux sociaux -->
+        <div class="footer-social-modern">
+            <h2>Suivez-nous</h2>
+            <div class="social-icons">
+                <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Produits Bio. Tous droits réservés.</p>
+    </div>
+</footer>
+
+
+<script src="prod1.js"></script>
+</body>
+</html>
